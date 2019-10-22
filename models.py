@@ -1,7 +1,7 @@
 def eSC(params, (n1,n2), pts):
 	"""
 	Secondary contact model with population change.
-  by E. Wong, modified from Tine et al. 2014.
+  	by E. Wong, modified from Tine et al. 2014.
 	S: Size of pop 1 after split. (Pop 2 has size 1-s)
 	N1: Size of population 1 after split.
 	N2: Size of population 2 after split.
@@ -31,8 +31,8 @@ def eSC(params, (n1,n2), pts):
 def IM_2M_AL_SC(params, ns, pts): 
 	""" 
 	Isolation-with-migration model with exponential pop growth and 2 classes of migration, 
-  period of allopatry followed by secondary contact, then 2 classes of migration.
-	by E. Wong, modified from dadi models & Nevado et al. 2018
+ 	period of allopatry followed by secondary contact, then 2 classes of migration.
+	by E. Wong, modified from Nevado et al. 2018.
 	S: Size of pop 1 after split. (Pop 2 has size 1-s.) 
 	N1: Final size of pop 1. 
 	N2: Final size of pop 2. 
@@ -70,6 +70,5 @@ def IM_2M_AL_SC(params, ns, pts):
 	phi2 = dadi.Integration.two_pops(phi2, xx, Tm, N1_func, N2_func, M12=Md, M21=Md) 
 	fs2 = dadi.Spectrum.from_phi(phi2, ns, (xx,xx)) 
 
-	### Sum the two spectra in proportion P
 	fs = P*fs1+(1-P)*fs2
 	return fs 
