@@ -1,5 +1,5 @@
 # dadi-models
-Previously unpublished dadi models used in Wong et al. (submitted) Strong divergent selection at multiple loci in two closely related species of ragworts adapted to high and low elevations on Mount Etna. 
+Previously unpublished dadi models used in Wong, E. L. Y., Nevado, B., Osborne, O. G., Papadopulos, A. S., Bridle, J. R., Hiscock, S. J., & Filatov, D. A. (2020). Strong divergent selection at multiple loci in two closely related species of ragworts adapted to high and low elevations on Mount Etna. Molecular Ecology, 29(2), 394-412.
 
 
 Previously published models can be found in
